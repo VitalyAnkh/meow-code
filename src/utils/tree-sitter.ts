@@ -1,8 +1,10 @@
 import * as vscode from "vscode";
 
-const extensionId = "gregoire.tree-sitter";
+export { SyntaxNode, Tree } from "./tree-sitter-api";
 
 export type TreeSitter = typeof import("./tree-sitter-api");
+
+const extensionId = "gregoire.tree-sitter";
 
 /**
  * An event which fires when the [Tree Sitter API](
